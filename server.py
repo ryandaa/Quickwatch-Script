@@ -7,7 +7,7 @@ import openai
 import os
 
 app = Flask(__name__)
-CORS(app, resources={r"/": {"origins": ["https://quickwatchv1-ryanda977-gmailcom.vercel.app", "https://quickwatchv1.vercel.app", "https://quickwatch.info", "https://www.quickwatch.info", "http://localhost:5173", "http://localhost:8000"]}})
+CORS(app, resources={r"/": {"origins": ["https://quickwatch.info", "https://www.quickwatch.info", "http://localhost:5173", "http://localhost:8000"]}})
 
 @app.route('/', methods=['POST'])
 
