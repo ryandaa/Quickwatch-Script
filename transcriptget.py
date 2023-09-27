@@ -12,8 +12,6 @@ def get_summary_from_url(url):
     if parsed_url.netloc == 'www.youtube.com' and parsed_url.path == '/watch':
         query_params = parse_qs(parsed_url.query)
         video_id = query_params.get('v', [None])[0]
-    else:
-        return "Invalid URL"
 
     # gets transcript
     tx = YouTubeTranscriptApi.get_transcript(video_id, languages=['en'])
@@ -25,7 +23,7 @@ def get_summary_from_url(url):
     transcript = ' '.join(outls)
 
     # summarizes transcript
-    openai.api_key = "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"
+    openai.api_key = OPENAI_KEY
 
     system_message = {
         "role": "system",
