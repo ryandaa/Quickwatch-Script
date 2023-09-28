@@ -3,6 +3,13 @@
 ## Description
 Quickwatch-Script is a backend function that is developed with Flask, designed to create the entire experience of the Quickwatch website. The primary function of this script is to fetch YouTube transcripts from a parsed YouTube URL and then summarize the content using the OpenAI API. This provides users with concise and relevant information from lengthy YouTube videos, making it easier to grasp the main points without watching the entire content.
 
+To make it run, users will have to enter: 
+
+python server.py
+
+vbnet
+Copy code
+
 ## Key Functions
 
 ### 1. `server.py`
