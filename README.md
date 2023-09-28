@@ -5,10 +5,9 @@ Quickwatch-Script is a backend function that is developed with Flask, designed t
 
 To make it run, users will have to enter: 
 
-python server.py
+**
+python server.py**
 
-vbnet
-Copy code
 
 ## Key Functions
 
